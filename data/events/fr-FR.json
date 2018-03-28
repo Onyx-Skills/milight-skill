@@ -1,0 +1,32 @@
+[
+  {
+    "code":"open_lamp",
+    "name":"Ouverture d'une lampe",
+    "description":"Une lampe s'ouvre",
+    "fa":"fa-lightbulb-o",
+    "color":"light-blue",
+    "params":[
+      {
+        "type": "select",
+				"name": "Lampe",
+				"variable": "name",
+				"url" : "mi_light.get_lamp"
+			}
+    ]
+  },
+  {
+    "code":"close_lamp",
+    "name":"Fermeture d'une lampe",
+    "description":"Une lampe se ferme",
+    "fa":"fa-lightbulb-o",
+    "color":"light-blue",
+    "params":[
+      {
+        "type": "select",
+				"name": "Lampe",
+				"variable": "name",
+				"url" : "mi_light.get_lamp"
+			}
+    ]
+  }
+]

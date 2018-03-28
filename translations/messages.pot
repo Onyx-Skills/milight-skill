@@ -1,0 +1,104 @@
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-05-31 16:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: controllers/MilightController.py:39
+msgid "Protocol is not a number !"
+msgstr ""
+
+#: controllers/MilightController.py:43
+msgid "Devices Add"
+msgstr ""
+
+#: controllers/MilightController.py:46 controllers/MilightController.py:59
+#: controllers/MilightController.py:71 controllers/MilightController.py:85
+msgid "An error has occured !"
+msgstr ""
+
+#: controllers/MilightController.py:56
+msgid "Devices Deleted"
+msgstr ""
+
+#: controllers/MilightController.py:82
+msgid "Devices Modified"
+msgstr ""
+
+#: templates/index.html:3
+msgid "Mi Light"
+msgstr ""
+
+#: templates/index.html:15
+msgid "Controller mes lampes"
+msgstr ""
+
+#: templates/index.html:16
+msgid "Ajoutez une lampe"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Couleur"
+msgstr ""
+
+#: templates/index.html:47
+msgid "Modifier"
+msgstr ""
+
+#: templates/index.html:100
+msgid "Ajoutez une nouvelle ampoule"
+msgstr ""
+
+#: templates/index.html:104 templates/index.html:129
+msgid "Name"
+msgstr ""
+
+#: templates/index.html:105 templates/index.html:130
+msgid "Identifier"
+msgstr ""
+
+#: templates/index.html:106 templates/index.html:131
+msgid "Protocol"
+msgstr ""
+
+#: templates/index.html:107 templates/index.html:132
+msgid "Color"
+msgstr ""
+
+#: templates/index.html:108
+msgid "Room"
+msgstr ""
+
+#: templates/index.html:109
+msgid "Change"
+msgstr ""
+
+#: templates/index.html:121
+msgid "Delete"
+msgstr ""
+
+#: templates/index.html:126
+msgid "Please Create a room before add a lamp"
+msgstr ""
+
+#: templates/index.html:126
+msgid "Add a room"
+msgstr ""
+
+#: templates/index.html:140
+msgid "Send"
+msgstr ""
+

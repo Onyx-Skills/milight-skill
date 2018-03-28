@@ -1,0 +1,30 @@
+[
+  {
+    "code":"open_light",
+    "name":"Open a lamp",
+    "description":"Open a lamp",
+    "url":"mi_light.action_open",
+    "params":[
+			{
+        "type": "select",
+				"name": "Lamp",
+				"variable": "name",
+				"url" : "mi_light.get_lamp"
+			}
+    ]
+  },
+  {
+    "code":"close_light",
+    "name":"Close a lamp",
+    "description":"Close a lamp",
+    "url":"mi_light.action_close",
+    "params":[
+			{
+        "type": "select",
+				"name": "Lamp",
+				"variable": "name",
+				"url" : "mi_light.get_lamp"
+			}
+    ]
+  }
+]

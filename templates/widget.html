@@ -1,0 +1,65 @@
+<script src="{{ url_for('static', filename='js/color-picker.min.js') }}"></script>
+
+{% for device in devices %}
+  <p>
+      <a class="modal-trigger" href="#modal_{{device.id}}">{{device.name}}</a>
+      <div class="switch">
+        <label>
+          Off
+          {% if device.state == 'true' %}
+            <input id="{{device.id}}" type="checkbox" onclick="change_state({{ device.id }})" checked>
+          {% else %}
+            <input id="{{device.id}}" type="checkbox" onclick="change_state({{ device.id }})">
+          {% endif %}
+          <span class="lever"></span>
+          On
+        </label>
+      </div>
+
+  </p><br>
+
+
+  <div id="modal_{{device.id}}" class="modal">
+  <form action="{{url_for('mi_light.change_color')}}" method="post">
+  <div class="modal-content">
+    <input type="hidden" name="id" value="{{device.id}}">
+    <h4>{{device.name}}</h4>
+
+    <label for="change_color">Couleur</label>
+    <p><input id="change_color" type="text" name="color_{{device.id}}" value="{{device.color}}"></p>
+
+    <script>
+        var picker = new CP(document.querySelector('input[name="color_{{device.id}}"]'));
+        picker.on("change", function(color) {
+            this.target.value = '#' + color;
+        });
+    </script>
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Modifier</button>
+  </div>
+  </form>
+  </div>
+{% endfor %}
+
+{% block script %}
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+    function change_state(id) {
+        var checkbox = document.getElementById(id);
+        $.ajax({
+           url: '{{ url_for("mi_light.change_state") }}',
+           type: "POST",
+           data: {id:id,state:checkbox.checked},
+           success: function(rep) {
+           }
+        });
+    }
+</script>
+
+{% endblock %}

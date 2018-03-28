@@ -1,0 +1,16 @@
+{
+  "name": "Milight",
+  "raw": "milight_skill",
+  "version": "1.0.1",
+  "description": "Control Milight Lamp in Onyx",
+  "packages":[
+    "milight"
+  ],
+  "dependencies": [],
+  "author": "Cassim Khouani",
+  "license": "Creative Commons 3.0 France",
+  "navbar": "True",
+  "data": "True",
+  "index": "mi_light.index",
+  "config": "mi_light.index"
+}
